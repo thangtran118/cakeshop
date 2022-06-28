@@ -1,0 +1,19 @@
+/*========== Responsive ========== */
+
+$breakpoints: (
+        'sm': '576px',
+        'md': '768px',
+        'lg': '992px',
+        'xl': '1200px',
+        'xxl': '1400px',
+);
+
+/*========== Color ========== */
+
+$clr--primary: #e5bf4a;
+$clr--body-bg: #131313;
+$clr--text: #fff;
+
+/*========== Utilities ========== */
+$font-sizes: 16, 24, 30;
+$font-weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;

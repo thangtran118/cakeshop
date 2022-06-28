@@ -1,0 +1,20 @@
+@use "./variables" as v;
+
+@mixin responsive($type) {
+  @media screen and (min-width: map-get(v.$breakpoints, $type)) {
+    @content;
+  }
+}
+
+@mixin easeOut($time: 0.25) {
+  transition: all #{$time}s ease-out;
+}
+
+@mixin pseudo($pos) {
+  position: relative;
+  &::#{$pos} {
+    content: '';
+    position: absolute;
+    @content;
+  }
+}

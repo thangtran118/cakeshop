@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as v;
+
+/*=============== Fonts ===============*/
+@font-face {
+  font-family: 'Jost';
+  src: url(../assets/fonts/Jost.ttf);
+}
+
+@font-face {
+  font-family: 'PoiretOne';
+  src: url(../assets/fonts/PoiretOne.ttf);
+}
+
+
+/*=============== Edit Scrollbar ===============*/
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(v.$clr--body-bg, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darken(v.$clr--primary, 15%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken(v.$clr--primary, 2);
+}
+
+/*=============== Body CSS ===============*/
+
+body {
+  font-family: 'Jost', sans-serif;
+  color: v.$clr--text;
+  background-color: v.$clr--body-bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PoiretOne', cursive, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9375rem;
+  cursor: pointer;
+}

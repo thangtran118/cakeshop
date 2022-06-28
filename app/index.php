@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <h1>hello world</h1>
 </body>
 <script src="js/main.js"></script>
 </html>

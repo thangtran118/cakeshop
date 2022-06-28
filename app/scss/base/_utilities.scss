@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+/*=============== font-size ===============*/
+
+@each $i in v.$font-sizes {
+  .fs-#{$i} {
+    $to-rem: calc($i / 16);
+    font-size: #{$to-rem}rem !important;
+  }
+}
+
+@each $type, $size in v.$breakpoints {
+  @each $i in v.$font-sizes {
+    @media screen and (min-width: $size) {
+      .fs-#{$type}-#{$i} {
+        $to-rem: calc($i / 16);
+        font-size: #{$to-rem}rem !important;
+      }
+    }
+  }
+}
+
+/*=============== font-weight ===============*/
+
+@each $i in v.$font-weights {
+  .fw-#{$i} {
+    font-weight: $i !important;
+  }
+}
+

@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+/*=============== Common classes ===============*/
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+// color
+.clr-primary {
+  color: v.$clr--primary;
+}
+
+//hover
+.hover {
+  @include m.easeOut();
+  &:hover {
+    color: v.$clr--primary;
+  }
+  &.hover-spacing {
+    &:hover {
+      letter-spacing: 3px;
+    }
+  }
+}
