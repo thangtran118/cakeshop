@@ -1,0 +1,21 @@
+// import scss vendors
+@import "vendors/bootstrap-reboot";
+@import "vendors/bootstrap-grid";
+@import "vendors/fontawesome";
+
+// import scss/abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// import scss/base
+@import "base/typography";
+@import "base/utilities";
+
+// import scss/components
+@import "components/button";
+
+// import scss/layout
+@import "layout/header";
+
+// import scss/pages
+@import "pages/home";
