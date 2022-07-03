@@ -3,7 +3,9 @@
 <?php
 require "./partials/head.php"
 ?>
-<body>
-
+<body id="home" page="index">
+<?php
+require "./partials/header.php"
+?>
 </body>
 <script src="js/main.js"></script>

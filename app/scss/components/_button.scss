@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.btn {
+  display: inline-block;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  touch-action: manipulation;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9375rem;
+
+  &:hover {
+    @include m.easeOut();
+  }
+  &.no-radius {
+    border-radius: 0;
+  }
+  &.btn-1 {
+    color: v.$clr--body-bg;
+    background-color: v.$clr--primary;
+    border: 1px solid v.$clr--primary;
+    &:hover {
+      color: v.$clr--primary;
+      background-color: v.$clr--body-bg;
+    }
+    &.disabled {
+      pointer-events: none;
+      @include m.pseudo('before') {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: v.$clr--white;
+        opacity: 0.2;
+        z-index: 101;
+      }
+    }
+  }
+  &.btn-2 {
+    border: 1px solid v.$clr--gray;
+    background-color: transparent;
+    color: v.$clr--white;
+    &:hover {
+      background-color: v.$clr--primary;
+      color: v.$clr--body-bg;
+    }
+  }
+  &.btn-3 {
+    color: v.$clr--body-bg;
+    background-color: v.$clr--primary;
+    border: 1px solid v.$clr--primary;
+    &:hover {
+      border-color: v.$clr--black;
+      background-color: transparent;
+    }
+  }
+}
+
+
+
+
+
+

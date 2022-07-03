@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.header {
+  background-color: v.$clr--black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  &__icon {
+    &__auth {
+      a {
+        width: 120px;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+    &__cart {
+      @include m.pseudo('after') {
+        content: attr(data-notify);
+        font-size: 12px;
+        color: v.$clr--body-bg;
+        line-height: 15px;
+        text-align: center;
+        display: block;
+        top: 0;
+        right: -10px;
+        min-width: 15px;
+        height: 15px;
+        background-color: v.$clr--primary;
+      }
+    }
+    &__nav-icon {
+      &:hover {
+        .nav-icon__line {
+          @include m.easeOut();
+          background-color: v.$clr--primary;
+        }
+      }
+    }
+  }
+}

@@ -13,7 +13,10 @@ $breakpoints: (
 $clr--primary: #e5bf4a;
 $clr--body-bg: #131313;
 $clr--text: #fff;
+$clr--white: #ffffff;
+$clr--black: #000;
+$clr--gray: rgba($clr--white, 0.2);
 
 /*========== Utilities ========== */
-$font-sizes: 16, 24, 30;
+$font-sizes: 15, 16, 24, 30;
 $font-weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
