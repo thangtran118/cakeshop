@@ -4,7 +4,12 @@
         <div class="d-flex align-items-center justify-content-between">
             <div class="header__logo">
                 <a href="">
-                    <img src="./assets/images/logo.png" alt="Cake Shop logo">
+                    <img
+                            class="lazyload"
+                            data-src="./assets/images/logo.png"
+                            src="./assets/images/logo.png"
+                            alt="Cake Shop logo"
+                    >
                 </a>
             </div>
             <div class="header__contact">
