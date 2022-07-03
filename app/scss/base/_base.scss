@@ -32,3 +32,22 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+// section title
+.section-title {
+  margin-bottom: 70px;
+  display: inline-block;
+  @include m.pseudo('after') {
+    width: 60%;
+    height: 0;
+    border-bottom: 1px solid v.$clr--primary;
+    bottom: -5px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+// text center
+.text-center {
+  text-align: center;
+}
