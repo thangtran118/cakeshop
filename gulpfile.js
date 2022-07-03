@@ -103,6 +103,7 @@ function views() {
     return gulp
         .src(options.views.src)
         .pipe(htmlmin({
+            removeComments: true,
             collapseWhitespace: true,
             ignoreCustomFragments: [/<\?[\s\S]*?(?:\?>|$)/]
         }))
