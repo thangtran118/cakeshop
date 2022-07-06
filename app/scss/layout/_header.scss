@@ -2,8 +2,13 @@
 @use "../abstracts/mixins" as m;
 
 .header {
-  background-color: v.$clr--black;
-  position: sticky;
+  &.scroll {
+    background-color: v.$clr--black;
+    @include m.easeOut();
+  }
+  background-color: transparent;
+  position: fixed;
+  width: 100vw;
   top: 0;
   left: 0;
   z-index: 1;

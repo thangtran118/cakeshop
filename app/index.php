@@ -39,9 +39,7 @@ require "./partials/banner.php";
 <!--End about-->
 </body>
 
-<!-- Vendor JS -->
-<script src="./js/vendors/jquery-3.6.0.min.js"></script>
-<script src="./js/vendors/parallax.min.js"></script>
-
-<script src="js/main.js"></script>
+<?php
+require "./partials/footer.php";
+?>
 </html>
