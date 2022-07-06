@@ -9,13 +9,13 @@ require "./partials/header.php";
 require "./partials/banner.php";
 ?>
 <!--Start about-->
-<section class="about">
-    <div class="about__title text-center mt-5 mb-3">
-        <h2 class="section-title">About Us</h2>
+<section class="about section">
+    <div class="about__title text-center">
+        <h2 class="section__title" data-aos="flip-left">About Us</h2>
     </div>
     <div class="container">
         <div class="row px-5">
-            <div class="col-6">
+            <div class="col-6" data-aos="fade-right">
                 <h3 class="clr-primary mb-4">
                     Cake Shop - Fresh cakes for every day
                 </h3>
@@ -25,7 +25,7 @@ require "./partials/banner.php";
                     goal.
                 </p>
             </div>
-            <div class="col-6">
+            <div class="col-6" data-aos="fade-left">
                 <img
                         class="lazyload"
                         alt="about image"

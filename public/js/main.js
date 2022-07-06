@@ -1,1 +1,1 @@
-import{headerScroll as e}from"./modules/header.js";e();
+import{headerScroll as e}from"./modules/header.js";e(),AOS.init();
